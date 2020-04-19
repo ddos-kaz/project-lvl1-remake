@@ -1,6 +1,6 @@
 {
   "name": "brain-games-hexlet-ddos",
-  "version": "2.0.1",
+  "version": "3.0.1",
   "description": "Remake of 1st Hexlet project",
   "main": "index.js",
   "bin": {
@@ -12,7 +12,8 @@
   "scripts": {
     "babel-node": "babel-node",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "eslint": "eslint"
   },
   "author": "doszhdam",
   "license": "ISC",
@@ -23,7 +24,11 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-stage-0": "^6.24.1"
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2"
   }
 }
