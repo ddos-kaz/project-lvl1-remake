@@ -10,8 +10,9 @@ const getUserName = () => {
 
 const isEven = (number) => number % 2 === 0;
 
+const generateRandomNumber = (min, max) => Math.floor(min + (Math.random() * ((max + 1) - min)));
+
 const brainEven = () => {
-  const generateRandomNumber = (min, max) => Math.floor(min + (Math.random() * ((max + 1) - min)));
   const FLOOR_OF_RANDOM_NUMBER = 1;
   const CEIL_OF_RANDOM_NUMBER = 1000;
   const GAME_ROUND_CEIL = 5;
